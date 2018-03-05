@@ -14,7 +14,7 @@ function nowServing()
   }
 
   else {
-    console.log(`currently serving ${katzDeli[0]}.`)
+    return `currently serving ${katzDeli[0]}.`
     katzDeli.shift()
   }
 }
