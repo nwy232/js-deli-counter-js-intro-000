@@ -28,11 +28,10 @@ function currentLine(katzDeliLine)
   }
 
   else {
-
-    console.log('The line is currently:')
+    var line=['The line is currently: ']
     for(var i=0;i<katzDeliLine.length;i++)
     {
-      '${i}. ${katzDeliLine[i]}'
+      line.push('${i}. ${katzDeliLine[i]}')
     }
   }
 
