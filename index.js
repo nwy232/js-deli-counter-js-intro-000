@@ -23,12 +23,12 @@ function currentLine(katzDeliLine)
 {
   if(katzDeliLine.length==0)
   {
-    console.log('The line is currently empty.')
+    return 'The line is currently empty.'
   }
 
   else {
 
-    return 'The line is currently:'
+    console.log('The line is currently:')
     for(var i=0;i<katzDeliLine.length;i++)
     {
       '${i}. ${katzDeliLine[i]}'
