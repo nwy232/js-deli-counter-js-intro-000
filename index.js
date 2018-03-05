@@ -28,7 +28,7 @@ function currentLine()
 
   else {
     console.log('The line is currently: ')
-    for(var i<0;i<katzDeliLine.length;i++)
+    for(var i=0;i<katzDeliLine.length;i++)
     {
       console.log(`${i}. ${katzDeliLine[i]},`)
     }
