@@ -10,7 +10,7 @@ function nowServing()
 {
   if(katzDeli.length==0)
   {
-    console.log('There is nobody waiting to be served!')
+    return 'There is nobody waiting to be served!'
   }
 
   else {
@@ -23,7 +23,7 @@ function currentLine()
 {
   if(katzDeli.length==0)
   {
-    console.log('The line is currently empty.')
+    return 'The line is currently empty.'
   }
 
   else {
