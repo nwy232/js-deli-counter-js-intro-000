@@ -34,5 +34,6 @@ function currentLine(katzDeliLine)
       line.push('${i}. ${katzDeliLine[i]}')
     }
   }
+  return line
 
 }
