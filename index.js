@@ -33,5 +33,5 @@ function currentLine
       return `${i}. ${katzDeliLine[i]},`
     }
   }
-  
+
 }
