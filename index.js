@@ -27,12 +27,12 @@ function currentLine(katzDeliLine)
   }
 
   else {
-    return `The line is currently: ${katzDeliLine[0,katzDeliLine.length]}`
-    /*console.log('The line is currently: ')
+
+    return 'The line is currently:'
     for(var i=0;i<katzDeliLine.length;i++)
     {
-      console.log(`${i}. ${katzDeliLine[i]},`)
-    }*/
+      '${i}. ${katzDeliLine[i]}'
+    }
   }
 
 }
