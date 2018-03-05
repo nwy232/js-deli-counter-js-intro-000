@@ -3,35 +3,34 @@ var katzDeli=[];
 function takeANumber(katzDeliLine,name)
 {
   katzDeliLine.push(name)
-  console.log(`Welcome, ${name}. You are number ${katzDeliLine.length} in line.`)
-  katzDeli=katzDeliLine
+  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
 }
 
-function nowServing()
+function nowServing(katzDeliLine)
 {
-  if(katzDeli.length==0)
+  if(katzDeliLine.length==0)
   {
     return 'There is nobody waiting to be served!'
   }
 
   else {
-    return `currently serving ${katzDeli[0]}.`
+    return `currently serving ${katzDeliLine[0]}.`
     katzDeli.shift()
   }
 }
 
-function currentLine()
+function currentLine(katzDeliLine)
 {
-  if(katzDeli.length==0)
+  if(katzDeliLine.length==0)
   {
     return 'The line is currently empty.'
   }
 
   else {
     console.log('The line is currently: ')
-    for(var i=0;i<katzDeli.length;i++)
+    for(var i=0;i<katzDeliLine.length;i++)
     {
-      console.log(`${i}. ${katzDeli[i]},`)
+      console.log(`${i}. ${katzDeliLine[i]},`)
     }
   }
 
